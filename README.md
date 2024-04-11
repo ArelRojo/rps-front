@@ -19,4 +19,5 @@ Make sure you have the following installed on your system:
 - Start the Development Server: `ng serve`
 - Access the Application: Open a web browser and navigate to `http://localhost:4200/` to view the application in action.
 
-Once inside the application you will need the username and password provided in the backend repository in the application.yml file.
+Once inside the application you will need the username and password provided in the backend repository in the application.yml file located in the rock-paper-scissor-boot module under resources.
+Backend application: https://github.com/ArelRojo/rock-paper-scissor.git
