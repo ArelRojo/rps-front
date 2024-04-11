@@ -1,0 +1,9 @@
+{
+  "/rps/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": { "^/rps": "" },
+    "secure": false,
+    "changeOrigin": true
+
+  }
+}

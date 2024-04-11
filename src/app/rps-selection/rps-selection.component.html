@@ -1,0 +1,20 @@
+<div class="p-5 " style="min-width: 250px">
+  <h3>{{type}}</h3>
+  <div class="flex flex-column gap-3">
+    <div class="field-checkbox">
+      <p-radioButton inputId="{{type}}_PAPER" name="{{type}}_option" value="PAPER" [(ngModel)]="option"
+        (click)="optionSelected()" ariaLabel="Papel"></p-radioButton>
+      <label class="ml-2" for="{{type}}_PAPER">PAPER</label>
+    </div>
+    <div class="field-checkbox">
+      <p-radioButton inputId="{{type}}ROCK" name="{{type}}_option" value="ROCK" [(ngModel)]="option"
+        (click)="optionSelected()"></p-radioButton>
+      <label class="ml-2" for="{{type}}_ROCK">ROCK</label>
+    </div>
+    <div class="field-checkbox">
+      <p-radioButton inputId="{{type}}_SCISSOR" name="{{type}}_option" value="SCISSOR" [(ngModel)]="option"
+        (click)="optionSelected()"></p-radioButton>
+      <label class="ml-2" for="{{type}}_SCISSOR">SCISSOR</label>
+    </div>
+  </div>
+</div>

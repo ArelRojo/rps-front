@@ -1,0 +1,27 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { ButtonModule } from 'primeng/button';
+import { MenubarModule } from 'primeng/menubar';
+import { ChartModule } from 'primeng/chart';
+import { InputTextModule } from 'primeng/inputtext';
+
+
+
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule
+
+  ],
+  exports:[
+    RadioButtonModule,
+    ButtonModule,
+    MenubarModule,
+    ChartModule,
+    InputTextModule
+
+  ]
+})
+export class PrimengModule { }

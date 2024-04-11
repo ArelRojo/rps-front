@@ -1,0 +1,19 @@
+
+
+
+
+
+<div class="flex flex-column">
+  <div class="flex align-items-center justify-content-center h-4rem  border-round m-2">
+    <input pInputText  placeholder="User" [(ngModel)]="user" />
+  </div>
+  <div class="flex align-items-center justify-content-center h-4rem  border-round m-2">
+    <input pInputText  placeholder="Password" [(ngModel)]="pass" />
+  </div>
+  <div class="flex align-items-center justify-content-center h-4rem  border-round m-2">
+    <p-button label="Login" (click)="login()"></p-button>
+  </div>
+  <div class="flex align-items-center justify-content-center h-4rem  border-round m-2" *ngIf="isError">
+    <h1>Wrong credentials</h1>
+  </div>
+</div>

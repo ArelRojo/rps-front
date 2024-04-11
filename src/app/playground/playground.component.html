@@ -1,0 +1,27 @@
+<div *ngIf="match.id" class="pt-2 flex flex-column">
+  <span>Match info</span>
+  <span>Actual match {{match.id}}</span>
+</div>
+
+<div class="flex flex-row flex-wrap" *ngIf="match.id">
+  <div class="flex align-items-center justify-content-center">
+    <app-rps-selection [type]="'Human'" [movementResponse]="movementResponse" (humanChoise)="catchHumanOption($event)"></app-rps-selection>
+  </div>
+
+  <div class="flex align-items-center justify-content-center">
+    <app-rps-selection [type]="'Robot'" [movementResponse]="movementResponse"></app-rps-selection>
+  </div>
+</div>
+  <div *ngIf="winner">
+    <h3>The winner is {{winner}}</h3>
+  </div>
+  <div *ngIf=" movementResponse?.isFinal === false">
+    <h3>Draw choose again!</h3>
+  </div>
+  <div *ngIf="!match.id || winner" class="pt-2">
+    <p-button label="Start match" (click)="startMatch()"></p-button>
+  </div>
+  <div *ngIf="match.id && !movementResponse?.isFinal && humanOption">
+    <p-button label="Send movement" (click)="sendMovement()"></p-button>
+  </div>
+
