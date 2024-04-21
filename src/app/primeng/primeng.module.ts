@@ -5,7 +5,7 @@ import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { ChartModule } from 'primeng/chart';
 import { InputTextModule } from 'primeng/inputtext';
-
+import { PasswordModule } from 'primeng/password';
 
 
 
@@ -20,7 +20,8 @@ import { InputTextModule } from 'primeng/inputtext';
     ButtonModule,
     MenubarModule,
     ChartModule,
-    InputTextModule
+    InputTextModule,
+    PasswordModule
 
   ]
 })

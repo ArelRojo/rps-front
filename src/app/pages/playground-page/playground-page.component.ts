@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { RpsService } from '../rps.service';
-import { MatchResponse, MovementRequest, MovementResponse } from '../interface';
+import { RpsService } from '../../rps.service';
+import { MatchResponse, MovementRequest, MovementResponse } from '../../interface';
 
 @Component({
-  selector: 'app-playground',
-  templateUrl: './playground.component.html',
-  styleUrl: './playground.component.css'
+  selector: 'app-playground-page',
+  templateUrl: './playground-page.component.html',
+  styleUrl: './playground-page.component.css'
 })
 export class PlaygroundComponent {
 

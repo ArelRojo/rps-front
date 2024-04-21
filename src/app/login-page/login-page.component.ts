@@ -22,7 +22,7 @@ export class LoginPageComponent {
   login(): void{
 
 this.rpsService.setUserPass(this.user,this.pass);
-this.rpsService.startMatch().subscribe(resp =>  this.router.navigateByUrl('/match')
+this.rpsService.auth().subscribe(resp =>  this.router.navigateByUrl('/match')
 ,(error : HttpErrorResponse)=>
   {
     console.log(error.ok);

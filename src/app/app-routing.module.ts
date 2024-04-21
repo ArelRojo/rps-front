@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PlaygroundComponent } from './playground/playground.component';
+import { PlaygroundComponent } from './pages/playground-page/playground-page.component';
 import { StatisticsPageComponent } from './pages/statistics-page/statistics-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 

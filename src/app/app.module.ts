@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlaygroundComponent } from './playground/playground.component';
+import { PlaygroundComponent } from './pages/playground-page/playground-page.component';
 import { PrimengModule } from './primeng/primeng.module';
 import { FormsModule } from '@angular/forms';
-import { RpsSelectionComponent } from './rps-selection/rps-selection.component';
+import { RpsSelectionComponent } from './components/rps-selection/rps-selection.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StatisticsPageComponent } from './pages/statistics-page/statistics-page.component';

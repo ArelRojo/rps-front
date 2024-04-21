@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges, input } from '@angular/core';
-import { MovementResponse } from '../interface';
+import { MovementResponse } from '../../interface';
 
 @Component({
   selector: 'app-rps-selection',

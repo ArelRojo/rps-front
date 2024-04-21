@@ -44,4 +44,8 @@ export class RpsService {
   getMetrics(type: string){
     return this.http.get<MetricsResponse>(`${this.baseUrl}/match/metrics?type=${type}`,{headers: this.getCredentialHeaders()})
   }
+
+  auth(){
+    return this.http.post<MatchResponse>(`${this.baseUrl}/auth`,{}, {headers: this.getCredentialHeaders()})
+  }
 }

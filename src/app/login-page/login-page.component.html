@@ -1,9 +1,10 @@
 <div class="flex flex-column">
   <div class="flex align-items-center justify-content-center h-4rem  border-round m-2">
-    <input pInputText  placeholder="User" [(ngModel)]="user" />
+    <input pInputText  placeholder="User" [(ngModel)]="user" [style.width]="'275px'"/>
   </div>
   <div class="flex align-items-center justify-content-center h-4rem  border-round m-2">
-    <input pInputText  placeholder="Password" [(ngModel)]="pass" />
+    <!--<input pInputText  placeholder="Password" [(ngModel)]="pass" />-->
+    <p-password [(ngModel)]="pass" [toggleMask]="true" [placeholder]="'Password'" [style.width]="'275px'"></p-password>
   </div>
   <div class="flex align-items-center justify-content-center h-4rem  border-round m-2">
     <p-button label="Login" (click)="login()"></p-button>

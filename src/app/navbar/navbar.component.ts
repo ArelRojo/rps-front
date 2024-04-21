@@ -14,13 +14,13 @@ export class NavbarComponent {
           {
               label: 'Match',
               icon: 'pi pi-fw pi-file',
-              routerLink: "match"
+              routerLink: "/match"
 
           },
           {
               label: 'Statistics',
               icon: 'pi pi-fw pi-pencil',
-              routerLink: "statistics",
+              routerLink: "/statistics",
 
 
           }

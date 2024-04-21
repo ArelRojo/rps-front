@@ -25,3 +25,7 @@ export interface MetricsResponse {
   paper:   number;
   scissor: number;
 }
+
+export interface AuthResponse{
+  user: string;
+}
